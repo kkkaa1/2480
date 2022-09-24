@@ -1,0 +1,24 @@
+a=input()
+a=a.split(" ")
+c=set(a)
+b=list(c)
+
+result=0
+if len(b)==1:
+    result=int(b[0])*1000+10000
+elif len(b)==3:
+    result=int(max(b))*100
+else:
+    if a.count('1')==2:
+        result=1100
+    elif a.count('2')==2:
+        result=1200
+    elif a.count('3')==2:
+        result=1300
+    elif a.count('4')==2:
+        result=1400
+    elif a.count('5')==2:
+        result=1500
+    else:
+        result=1600
+print(result)
